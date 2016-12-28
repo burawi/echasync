@@ -2,9 +2,9 @@ module.exports = {
     do: function (array, fn, callback) {
         function step(i) {
             if(i < array.length){
-                fn(array[i],function () {
+                fn(function () {
                     step( i + 1);
-                })
+                }, array[i], i, array);
             } else {
                 callback();
             }

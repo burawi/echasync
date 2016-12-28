@@ -7,10 +7,10 @@ npm i echasync
 # Usage
 
 ```javascript
-var forEachAsync = require('echasync');
+var echasync = require('echasync');
 var files = ['1.txt','2.txt','3.txt','4.txt','5.txt'];
 var contents = [];
-forEachAsync.do(files,function (filename,next) {
+echasync.do(files,function (next,filename,index,files) {
     fs.readFile(filename,function(err,data){
         if(!err) {
             contents.push(data);
@@ -22,4 +22,4 @@ forEachAsync.do(files,function (filename,next) {
 });
 ```
 
-`forEachAsync.do(array,fn(element,next),callback)`
+`forEachAsync.do(array,fn(next,element,index,array),callback)`
