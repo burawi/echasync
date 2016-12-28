@@ -1,0 +1,25 @@
+{
+  "name": "foreach-async",
+  "version": "0.0.1",
+  "description": "asyncronous foreach method",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burawi/foreach-async.git"
+  },
+  "keywords": [
+    "foreach",
+    "async",
+    "asyncronous",
+    "array"
+  ],
+  "author": "Abu Rawi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/burawi/foreach-async/issues"
+  },
+  "homepage": "https://github.com/burawi/foreach-async#readme"
+}
