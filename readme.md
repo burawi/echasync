@@ -1,13 +1,13 @@
 # Installation
 
 ```
-npm i foreach-async
+npm i foreachasync
 ```
 
 # Usage
 
 ```javascript
-var forEachAsync = require('foreach-async');
+var forEachAsync = require('foreachasync');
 var files = ['1.txt','2.txt','3.txt','4.txt','5.txt'];
 var contents = [];
 forEachAsync.do(files,function (filename,next) {
