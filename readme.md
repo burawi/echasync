@@ -1,13 +1,13 @@
 # Installation
 
 ```
-npm i foreachasync
+npm i echasync
 ```
 
 # Usage
 
 ```javascript
-var forEachAsync = require('foreachasync');
+var forEachAsync = require('echasync');
 var files = ['1.txt','2.txt','3.txt','4.txt','5.txt'];
 var contents = [];
 forEachAsync.do(files,function (filename,next) {
