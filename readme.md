@@ -1,10 +1,27 @@
 # Installation
 
 ```
-npm i echasync
+npm install echasync
 ```
 
 # Usage
+
+**_This is wrote following the [OADS Standards](https://github.com/ODNA/OADS)._**
+
+```javascript
+echasync.do([loopedArray],operation(next(),element,#index,[loopedArray]),callback())
+```
+
+Loops through an array asynchronously.
+- [loopedArray]: The array you want loop through.
+- operation(): The function you want to run for each element in the array.
+    - next(): When you call to this function, you move to the next element.
+    - element: The value of the element being handled.
+    - #index: The index of the element being handled.
+    - [loopedArray]: The array you are looping through.
+- callback(): The function to run when all the elements are been handled.
+
+Eg:
 
 ```javascript
 var echasync = require('echasync');
@@ -21,5 +38,3 @@ echasync.do(files,function (next,filename,index,files) {
     console.log(contents);
 });
 ```
-
-`forEachAsync.do(array,fn(next,element,index,array),callback)`
